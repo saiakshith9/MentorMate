@@ -1,0 +1,76 @@
+.error-box {
+  padding: 3rem 2rem;
+  background-color: #eeea;
+  border-radius: 0.25rem;
+}
+
+.course-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 1.5rem;
+  background-color: #eeea;
+  border-radius: 0.25rem;
+}
+
+.accordion-button {
+  margin: 0;
+  transition: 0.2s linear;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #b3edb3dd;
+  color: #1b4706;
+  border: 1px solid #b3edb3;
+  font-weight: 900;
+  box-shadow: none;
+}
+
+.active {
+  background-color: aqua;
+}
+
+.accordion-body {
+  padding: 0;
+}
+
+.accordion-item {
+  margin: 0 1rem;
+  max-width: 20rem;
+}
+
+.list-group-item {
+  border-radius: 0 !important;
+  font-weight: 100;
+}
+
+.list-group-item:active,
+.list-group-item:focus,
+.list-group-item-active {
+  background-color: #d3ffc0 !important;
+  border: 1px solid #d3ffc0 !important;
+  color: inherit;
+  font-weight: 700;
+}
+
+.list-group-item:hover {
+  background-color: #f5fff1;
+  border: 1px solid #ddffce;
+  color: inherit;
+}
+
+.display {
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.content-window {
+  width: 100%;
+  height: 70vh;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.1rem #317e0c;
+}
+
+.completed {
+  color: #317e0c !important;
+  font-weight: 700;
+}

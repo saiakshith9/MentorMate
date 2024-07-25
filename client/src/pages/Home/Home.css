@@ -1,0 +1,106 @@
+.hero {
+  display: grid;
+  grid-template-columns: 2fr 7fr;
+  grid-gap: 5rem;
+}
+
+.hero-image {
+  width: 100%;
+  filter: drop-shadow(0 0 0.2rem #2a7009);
+  animation: rotate 45s linear infinite;
+}
+
+.hero-content {
+  display: flex;
+  text-align: justify;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #444;
+  font-family: "Playpen Sans", cursive;
+}
+
+.row a {
+  text-decoration: none;
+}
+
+.card {
+  height: 18rem;
+}
+
+.listing-card {
+  border: none;
+  margin-bottom: 1.5rem;
+  transition: 0.3s ease;
+  background-color: #f6fff6bf;
+  color: #26610a;
+}
+
+.listing-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 2rem #aaa;
+  background-color: #ecffec;
+}
+
+.card-img {
+  overflow: hidden;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s ease-in-out;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.listing-card:hover > .card-img .card-img-top {
+  transition: 0.3s ease-in-out;
+}
+
+.overlay {
+  opacity: 0.2;
+  background-color: white;
+  /* height: 20rem; */
+  transition: 0.3s ease-in-out;
+}
+
+.listing-card:hover > .overlay,
+.overlay:hover {
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.card-body,
+.listing-body {
+  border-top: 1px solid #4444;
+  padding: 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+.listing-card:hover > .listing-body {
+  text-shadow: 0 0 3px silver;
+  transition: 0.3s ease-in-out;
+}
+
+.listing-card:hover > .card-title {
+  text-decoration: underline;
+  transition: 0.2s linear;
+}
+
+.card-subtitle {
+  margin: 0.5rem 0 0 0;
+}
+
+.desc {
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  margin: 0 0 1rem 0;
+}

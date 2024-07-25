@@ -1,0 +1,12 @@
+.button {
+  display: inline;
+  color: white;
+  background-color: #42ac12 !important;
+  border-color: #38910e !important;
+  margin: 0 0.5rem;
+}
+
+.content {
+  background-color: #ccc5;
+  min-height: 100vh;
+}
